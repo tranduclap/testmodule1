@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f9f9f9;
+    }
+    .container {
+      width: 570px;
+      height: 476px;
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      height: 20%;
+      border-bottom: 2px solid black;
+    }
+    .logo {
+      width: 30%;
+      text-align: center;
+      padding: 10px;
+      border-right: 2px solid black;
+    }
+    .banner {
+      width: 70%;
+      text-align: center;
+      padding: 10px;
+    }
+    .nav {
+      display: flex;
+      height: 10%;
+      border-bottom: 2px solid black;
+    }
+    .nav div {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      border-right: 2px solid black;
+    }
+    .nav div:last-child {
+      border-right: none;
+    }
+    .main {
+      display: flex;
+      height: 70%;
+    }
+    .sidebar {
+      width: 25%;
+      text-align: center;
+      padding: 20px;
+      border-right: 2px solid black;
+    }
+    .content {
+      width: 75%;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo">Logo</div>
+    <div class="banner">Banner</div>
+  </div>
+  <div class="nav">
+    <div>Home</div>
+    <div>Product</div>
+    <div>Order</div>
+  </div>
+  <div class="main">
+    <div class="sidebar">Side bar</div>
+    <div class="content">List Product</div>
+  </div>
+</div>
+</body>
+</html>
